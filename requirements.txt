@@ -4,7 +4,7 @@
 streamlit==1.24.1
 matplotlib>=3.2.2
 numpy>=1.18.5,<1.24.0
-opencv-python-headless==4.6.0.66
+opencv-python-headless==4.8.0.74
 #opencv-python>=4.1.1
 Pillow>=7.1.2
 PyYAML>=5.3.1
