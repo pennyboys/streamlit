@@ -1,5 +1,5 @@
 import streamlit as st
-import cv2
+#import cv2
 import numpy as np
 
 def detect_toothbrush(image):
@@ -40,12 +40,12 @@ def main():
     # カメラ起動ボタンを表示
     if st.button("カメラを起動"):
         # カメラを起動して画像を取得
-        cap = cv2.VideoCapture(0)
-        ret, frame = cap.read()
-        cap.release()
+        #cap = cv2.VideoCapture(0)
+        #ret, frame = cap.read()
+        #cap.release()
 
         # 画像を表示
-        st.image(frame, channels="BGR")
+        #st.image(frame, channels="BGR")
 
         # 歯ブラシの識別を実行
         #result = detect_toothbrush(frame)
