@@ -2,7 +2,7 @@
 
 # Base ----------------------------------------
 streamlit==1.24.1
-streamlit_toggle
+streamlit_toggle-switch
 matplotlib>=3.2.2
 numpy>=1.18.5,<1.24.0
 opencv-python-headless==4.8.0.74
