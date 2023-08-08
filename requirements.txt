@@ -2,7 +2,7 @@
 
 # Base ----------------------------------------
 streamlit==1.24.1
-streamlit-toggle-switch
+streamlit-toggle-switch==1.0.2
 matplotlib>=3.2.2
 numpy>=1.18.5,<1.24.0
 opencv-python-headless==4.8.0.74
@@ -15,8 +15,10 @@ torch>=1.7.0,!=1.12.0
 torchvision>=0.8.1,!=0.13.0
 tqdm>=4.41.0
 protobuf<4.21.3
-google.cloud
-google.oauth2
+google-api-core==2.11.1
+google-auth==2.22.0
+google-cloud-vision==3.4.4
+googleapis-common-protos==1.60.0
 
 # Logging -------------------------------------
 tensorboard>=2.4.1
