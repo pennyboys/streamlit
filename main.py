@@ -1,5 +1,5 @@
 import streamlit as st
-import streamlit_toggle as tog
+# import streamlit_toggle as tog
 from google.cloud import vision
 from google.oauth2 import service_account
 
@@ -49,15 +49,7 @@ def detect_toothbrush(image):
 
 def main():
     st.title("大人の歯磨きアプリ")
-    if tog.st_toggle_switch(
-            label="カメラ起動",
-            key="Key1",
-            default_value=False,
-            label_after=False,
-            inactive_color='#D3D3D3',
-            active_color="#11567f",
-            track_color="#29B5E8"
-            ):
+    if st.checkbox('カメラを起動する'):
 
         picture = st.camera_input("歯ブラシを撮って！")
 
