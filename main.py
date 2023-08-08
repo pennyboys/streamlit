@@ -8,11 +8,11 @@ def detect_toothbrush(image):
 
     service_account_key = {
         "type": "service_account",
-        "project_id": "crypto-visitor-395006",
-        "private_key_id": "c535a81cf017677f38546d95cf253e03f0ea884b",
-        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDMlvawnNt5fzg9\nWwiyQKhYEdbKD65vR18aCFYVPFRFvrF7AxhVWBBX0rpRsZOHK59RF0R9FKFlqqWS\nt94tua9ZBK3lW8fgfO1n9kvl2Zgqobe8cO6eBVQoPlBhNFPogZEcadBsjLOw+44g\nEJORSSQL6rn6xj4AlFKfQLXvw3sVRb+lowXyRg7QeiUQx7B94wYc8YcdAK1vaeVc\n1fDjhMzBq4VQAydng9Ntftb2A06RrObNXfHcSCCrFdJwdJ4LJ70P1DGy3p4itvIZ\nIiZ3gHr2lIXeZDEO5/3Xt1gbcswAr+l+cpWKauliIDzUGmEPMG5XcI2HrDo1oKPf\nqPAJ7m8fAgMBAAECggEANDZ018b4Vi4LFtGESyWoMO3AkMnmvRyMX1LwUTQX18Le\nfaPhEmrKpPcxOMcmfPE7lBDpmDhrJkyiO+rz51yDrSa+EJJXVOndFtKrNQpOxNaH\n0y5JH4gBndGlZuFZZrWmaIdyuzk/ZLQWZgWE+6ecbPQnKaJtUW2JFn6H0Bxl7Zvt\n/bQYgXgDyEZmeyCdrvpV0tFW0agY6aW8XCty3A/HC7oxf63rev5zo8ACiAAarLKB\ndXJTLgydA/74Z+dAjWm6n/bIP5NV9DMWOm02+7zVld8jPkmere36L8KtfDzNK4yW\nUIBXbswC0EEBXobT5xM/vHtxmicFCVB1o2w7/AnyYQKBgQDrF9DXc1PgB934IOId\n15JZuQPgWQ2NSBPUsMcQgf+rul7BoojaHYCe6hT1JQksdeAXl+bOjwIIUKUPT2Tg\nuC+6HwWS3koYoOnNQ0YNB6njNw09httlzhFzg7SO/uQAPyoI81ylLaRF64kL6uu4\n2/v3pHqihu7O0Vb8N80l7VKo4QKBgQDeyLOmkfqLKoEWc8OM8l7F8u/qJHKN7KC8\nNSI3EuQjoWWOe9OQWoF4PTnNPrQZHJnQr8VjQoBm+IFkxwWN2aBcfDsJehcI+iTX\nLiseKNQ5Gb0JD3+30F4MyujkS9dY/nuSFWNXm1El8U0jjlC6rQHtHikvHOyLL05g\npTxLiOwX/wKBgQDSIxOVwYxzcBTEuf/j1NEISgxg+LjYVFkFgI4u/0RdZ9VTF8lj\nzYMuiOX6ygQNLcAE1s6ES+fxLsSbjsgI5hojL593zCJHKW5S/5MaCoOciZTYLjbm\nJPAMZOl79/ItFkiof3+MVePEa+iwMmhJcLkkfmzv4dSMISqzf91rzVpZgQKBgFLV\n7XaR8MauFzFx+dP+ip6vpeU5iB6dTWatmvs/WvSknk5MXG3gOSOsIEHgfraXm9ms\ngYhWwceHvxTpq3cC5E1/I7RyYP5FhE0+LWoZZE+W8mLcEHEYWOAI0m+Qg5Hjja7T\npQx+A75H6pa94+aFTaINBOMvrgRSoqHszm6HisGhAoGAH+QjpY2gzTtkn3OfJcqo\nRhi7tyeKLeDzLlQiUcV2tblFF2hrFeKM/buYNiwnYEMQOjOYaRsXqDqj5VgXybQO\nBBi4NbuBE7GIZnS0qjwpPq44I3pqnVD9ZZkfjNQFtqQ2zdTz/HfTrQBz5/9V/Kj9\n5pdeniuSC0eQM0IJWhweZfg=\n-----END PRIVATE KEY-----\n",
-        "client_email": "my-project@crypto-visitor-395006.iam.gserviceaccount.com",
-        "client_id": "111524740235394368765",
+        "project_id": st.secrets["GcpApiKey"]["project_id"],
+        "private_key_id": st.secrets["GcpApiKey"]["private_key_id"],
+        "private_key": st.secrets["GcpApiKey"]["private_key"],
+        "client_email": st.secrets["GcpApiKey"]["client_email"],
+        "client_id": st.secrets["GcpApiKey"]["client_id"],
         "auth_uri": "https://accounts.google.com/o/oauth2/auth",
         "token_uri": "https://oauth2.googleapis.com/token",
         "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
