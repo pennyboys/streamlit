@@ -1,7 +1,7 @@
 import streamlit as st
 # import streamlit_toggle as tog
-from google.cloud import vision
 from google.oauth2 import service_account
+from google.cloud import vision
 
 
 def detect_toothbrush(image):
